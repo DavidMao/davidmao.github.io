@@ -30,7 +30,6 @@ var weather = (function(self, $) {
       } else {
         $(function() {
           $('#error_dialog').html('Geolocation is not supported by this browser. Defaulting to Seattle.');
-          $('#error_dialog').dialog();
         });
         displayLocation(false);
         run();
