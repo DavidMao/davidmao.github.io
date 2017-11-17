@@ -43,12 +43,11 @@ var weather = (function(self, $) {
 
   function displayLocation(usingGeolocation) {
     if (usingGeolocation) {
-      var geocoder = new google.maps.Geocoder();
-      var latlng = new google.maps.LatLng(lati,longi);
+      var geocoder = new google.maps.Geocoder;
+      var latlng = {lat: lati, lng: longi};
 
-      geocoder.geocode({latLng: latlng}, function(results, status) {
-        if (status == google.maps.GeocoderStatus.OK) {
-
+      geocoder.geocode({'location': latlng}, function(results, status) {
+        if (status === 'OK') {
           var cityFound = false;
           var stateFound = false;
           var cityName = '';
