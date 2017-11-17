@@ -1,0 +1,79 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucia Grande", sans-serif;
+  letter-spacing: 1px;
+  color:#fff;
+  text-align: center;
+}
+
+h3 {
+  letter-spacing: 5px;
+}
+
+.background {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  z-index: -1;
+}
+
+.hide {
+  display:none;
+}
+
+.tableDisplay {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.tableHead {
+  border-bottom: 1px solid #fff;
+}
+
+#currWeatherIcon {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#currTemp {
+  font-size:600%;
+}
+
+#currSummary {
+  font-size:125%;
+  text-align: left;
+}
+
+#dailyConditions {
+  border-collapse:separate;
+  border-spacing:0px 5px;
+  padding-bottom: 30px;
+}
+
+#dailyConditions td {
+  padding: 0px 7px 0px 7px;
+}
+
+#hourlyConditions {
+  border-collapse:separate;
+  border-spacing:0px 5px;
+}
+
+#hourlyConditions td {
+  padding: 0px 15px 0px 15px;
+}
+
+@media all and (max-width: 1000px) {
+  #currSummary {
+    text-align: center;
+  }
+}
