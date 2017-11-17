@@ -112,7 +112,6 @@ var weather = (function(self, $) {
     }
     $(function() {
       $('#error_dialog').html(errorString);
-      $('#error_dialog').dialog();
     });
     displayLocation(false);
     run();
@@ -165,7 +164,7 @@ var weather = (function(self, $) {
 
     var weekdayShort = ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'];
 
-    var weekdayLong = ['SUNDAY', 'MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY'];
+    var weekdayLong = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
     var dateTime = {};
     dateTime.date = readableDate;

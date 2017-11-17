@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 
     <title>Weather | David Mao</title>
-    <meta name="description" content="David Mao's local weather forecast site. Automatic location detection for your city and an elegant, minimalist UI.">
+    <meta name="description" content="David Mao's personal Seattle weather forecast site.">
     <link rel="shortcut icon" type="image/png" href="/img/icons/favicons/favicon-leaf.png"/>
 
     <!-- jQuery -->
@@ -19,15 +19,7 @@
     <script src="/js/weather/skycons.js"></script>
 
     <!-- Google Geocoder -->
-<!--    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>-->
-
-<!--
-      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA38_ZXy9kgCs_RQHW0V6pYKtIYG-LUBbM&callback=initMap"
-  type="text/javascript"></script>
--->
-
-    <script async defer
-  src="https://maps.googleapis.com/maps/api/js?client=AIzaSyA38_ZXy9kgCs_RQHW0V6pYKtIYG-LUBbM&v=3.29&callback=initMap"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA38_ZXy9kgCs_RQHW0V6pYKtIYG-LUBbM" type="text/javascript"></script>
 
     <!--  weather javascript  -->
     <script src="/js/weather/weather.js"></script>
@@ -43,10 +35,10 @@
 
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-6 col-md-6">
+        <div class="col-sm-6">
           <h3 class="text-left" id="locationName"></h3>
         </div>
-        <div class="col-sm-6 col-md-6">
+        <div class="col-sm-6">
           <h3 class="text-right" id="currDateTime"> </h3>
         </div>
       </div>
