@@ -136,6 +136,9 @@ var weather = (function(self, $) {
         hourlyData = json.hourly.data;
         dailyData = json.daily.data;
 
+        // Remove loading icon
+        $('#loading-icon-holder').addClass('hide');
+
         // Background
         displayBackground(currData.icon);
 
