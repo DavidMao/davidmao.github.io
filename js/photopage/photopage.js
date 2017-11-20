@@ -76,13 +76,6 @@ var photopage = (function(self, $) {
       console.error(tulipRepostCountAnim.error);
     }
 
-    var tulipFollowerCountAnim = new CountUp("tulip-follower-count", 0, 20, 0, 3);
-    if (!tulipFollowerCountAnim.error) {
-      tulipFollowerCountAnim.start();
-    } else {
-      console.error(tulipFollowerCountAnim.error);
-    }
-
     var tulipLikeCountAnim = new CountUp("tulip-like-count", 0, 460, 0, 3);
     if (!tulipLikeCountAnim.error) {
       tulipLikeCountAnim.start();
