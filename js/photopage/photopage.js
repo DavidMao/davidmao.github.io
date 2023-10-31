@@ -83,14 +83,14 @@ var photopage = (function(self, $) {
       console.error(tulipLikeCountAnim.error);
     }
 
-    var morningViewCountAnim = new CountUp("morning-view-count", 0, 20, 0, 3);
+    var morningViewCountAnim = new CountUp("morning-view-count", 0, 31, 0, 3);
     if (!morningViewCountAnim.error) {
       morningViewCountAnim.start();
     } else {
       console.error(morningViewCountAnim.error);
     }
 
-    var morningDownloadCountAnim = new CountUp("morning-download-count", 0, 285, 0, 3);
+    var morningDownloadCountAnim = new CountUp("morning-download-count", 0, 383, 0, 3);
     if (!morningDownloadCountAnim.error) {
       morningDownloadCountAnim.start();
     } else {
